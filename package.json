@@ -26,7 +26,7 @@
     "manual-test": "node spec/manual/app.js",
     "preversion": "npm run clean && npm run build && npm test",
     "postversion": "git push --no-verify && git push --tags --no-verify",
-    "prepublish": "npm run build"
+    "postinstall": "npm run build",
   },
   "keywords": [
     "xlsx",
